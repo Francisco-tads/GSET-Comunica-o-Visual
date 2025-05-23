@@ -7,7 +7,7 @@ const servicesData: ServiceProps[] = [
     id: 'feiras-stands',
     title: 'Feiras e Stands',
     description: 'A Gset Comunicação Visual se especializou em atender as montadoras de stands fornecendo logotipia impressa, em recorte eletrônico e letras em alto relevo. Com qualidade de última geração, agilidade e um custo benefício acessível, atendendo a mais de 10 anos as montadoras que projetam e montam as feiras e eventos em todo o Brasil.',
-    imageUrl: '/https://raw.githubusercontent.com/Francisco-tads/GSET-Comunica-o-Visual/refs/heads/master/src/img/feiras-stands.jpg'
+    imageUrl: 'https://raw.githubusercontent.com/Francisco-tads/GSET-Comunica-o-Visual/refs/heads/master/src/img/feiras-stands.jpg'
   },
   {
     id: 'adesivos-parede',
