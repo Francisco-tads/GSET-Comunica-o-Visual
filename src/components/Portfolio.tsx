@@ -6,14 +6,14 @@ const portfolioData: PortfolioItemProps[] = [
     id: 'portfolio-1',
     title: 'Stand Corporativo',
     category: 'Letra caixa com iluminação de Led',
-    imageUrl: '/src/img/adesivos.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    imageUrl: 'https://raw.githubusercontent.com/Francisco-tads/GSET-Comunica-o-Visual/refs/heads/master/src/img/adesivos.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     whatsappNumber: '5511991298838'
   },
   {
     id: 'portfolio-2',
     title: 'Adesivo Decorativo',
     category: 'Pix em acrílico',
-    imageUrl: '/src/img/pix.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    imageUrl: 'https://raw.githubusercontent.com/Francisco-tads/GSET-Comunica-o-Visual/refs/heads/master/src/img/pix.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     whatsappNumber: '5511991298838'
   },
   {
@@ -34,14 +34,14 @@ const portfolioData: PortfolioItemProps[] = [
     id: 'portfolio-5',
     title: 'Adesivo Comercial',
     category: 'Adesivos de Parede',
-    imageUrl: '/src/img/ad-parede.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    imageUrl: 'https://raw.githubusercontent.com/Francisco-tads/GSET-Comunica-o-Visual/refs/heads/master/src/img/ad-parede.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     whatsappNumber: '5511991298838'
   },
   {
     id: 'portfolio-6',
     title: 'Personalização externa',
     category: 'Comunicação Visual',
-    imageUrl: '/src/img/adesivos-externo.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    imageUrl: 'https://raw.githubusercontent.com/Francisco-tads/GSET-Comunica-o-Visual/refs/heads/master/src/img/adesivos-externo.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     whatsappNumber: '5511991298838'
   }
 ];

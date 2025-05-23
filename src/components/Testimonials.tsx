@@ -33,7 +33,7 @@ const testimonials: TestimonialProps[] = [
     company: 'Arena Premium',
     text: 'Parceiro de longa data em nossos eventos corporativos. A Gset sempre entrega mais do que o esperado, com soluções criativas e acabamento impecável em todas as peças de comunicação visual.',
     rating: 4,
-    imageUrl: '/src/img/mega.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+    imageUrl: 'https://raw.githubusercontent.com/Francisco-tads/GSET-Comunica-o-Visual/refs/heads/master/src/img/mega.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
   }
 ];
 
