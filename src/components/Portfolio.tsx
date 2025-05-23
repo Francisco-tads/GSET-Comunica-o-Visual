@@ -20,7 +20,7 @@ const portfolioData: PortfolioItemProps[] = [
     id: 'portfolio-3',
     title: 'Sinalização Corporativa',
     category: 'Comunicação Visual',
-    imageUrl: '/src/img/adesivo-interno.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    imageUrl: 'https://raw.githubusercontent.com/Francisco-tads/GSET-Comunica-o-Visual/refs/heads/master/src/img/adesivo-interno.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     whatsappNumber: '5511991298838'
   },
   {
