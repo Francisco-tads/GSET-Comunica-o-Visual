@@ -42,24 +42,24 @@ const Testimonials: React.FC = () => {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 px-4">
             O que nossos clientes dizem
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto px-4">
             A satisfação de nossos clientes é o nosso maior orgulho. Confira alguns depoimentos
             de parceiros que confiaram em nosso trabalho.
           </p>
           <div className="w-20 h-1 bg-red-600 mx-auto mt-6"></div>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {testimonials.map((testimonial, index) => (
             <div 
               key={index} 
-              className="bg-gray-50 p-8 rounded-lg shadow-md transform transition-all duration-300 hover:-translate-y-2 hover:shadow-lg"
+              className="bg-gray-50 p-6 lg:p-8 rounded-lg shadow-md transform transition-all duration-300 hover:-translate-y-1 lg:hover:-translate-y-2 hover:shadow-lg"
             >
               <div className="flex items-center mb-6">
-                <div className="w-16 h-16 rounded-full overflow-hidden mr-4">
+                <div className="w-12 lg:w-16 h-12 lg:h-16 rounded-full overflow-hidden mr-3 lg:mr-4 flex-shrink-0">
                   <img 
                     src={testimonial.imageUrl} 
                     alt={testimonial.name} 
@@ -67,8 +67,8 @@ const Testimonials: React.FC = () => {
                   />
                 </div>
                 <div>
-                  <h4 className="text-lg font-bold">{testimonial.name}</h4>
-                  <p className="text-gray-600 text-sm">{testimonial.position}, {testimonial.company}</p>
+                  <h4 className="text-base lg:text-lg font-bold">{testimonial.name}</h4>
+                  <p className="text-gray-600 text-xs lg:text-sm">{testimonial.position}, {testimonial.company}</p>
                 </div>
               </div>
               
@@ -76,13 +76,13 @@ const Testimonials: React.FC = () => {
                 {Array.from({ length: 5 }).map((_, i) => (
                   <Star 
                     key={i}
-                    size={18} 
+                    size={16} 
                     className={i < testimonial.rating ? "text-yellow-500 fill-yellow-500" : "text-gray-300"}
                   />
                 ))}
               </div>
               
-              <p className="text-gray-700 italic">"{testimonial.text}"</p>
+              <p className="text-gray-700 italic text-sm lg:text-base">"{testimonial.text}"</p>
             </div>
           ))}
         </div>

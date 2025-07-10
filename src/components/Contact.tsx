@@ -11,10 +11,10 @@ const Contact: React.FC = () => {
     <section id="contato" className="py-20 bg-gray-900 text-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 px-4">
             Entre em Contato
           </h2>
-          <p className="text-lg text-gray-300 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg text-gray-300 max-w-3xl mx-auto px-4">
             Estamos disponíveis para esclarecer dúvidas, fornecer orçamentos e
             ajudar a encontrar a melhor solução para o seu projeto.
           </p>
@@ -23,8 +23,8 @@ const Contact: React.FC = () => {
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <div className="bg-gray-800 p-8 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-bold mb-6">Envie uma mensagem</h3>
+          <div className="bg-gray-800 p-6 lg:p-8 rounded-lg shadow-lg">
+            <h3 className="text-xl lg:text-2xl font-bold mb-6">Envie uma mensagem</h3>
             
             <form onSubmit={handleSubmit}>
               <div className="mb-6">
@@ -32,7 +32,7 @@ const Contact: React.FC = () => {
                 <input 
                   type="text" 
                   id="name" 
-                  className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 text-white"
+                  className="w-full px-3 py-2 lg:px-4 lg:py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 text-white text-sm lg:text-base"
                   placeholder="Seu nome"
                   required
                 />
@@ -43,7 +43,7 @@ const Contact: React.FC = () => {
                 <input 
                   type="email" 
                   id="email" 
-                  className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 text-white"
+                  className="w-full px-3 py-2 lg:px-4 lg:py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 text-white text-sm lg:text-base"
                   placeholder="seu@email.com"
                   required
                 />
@@ -54,7 +54,7 @@ const Contact: React.FC = () => {
                 <input 
                   type="tel" 
                   id="phone" 
-                  className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 text-white"
+                  className="w-full px-3 py-2 lg:px-4 lg:py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 text-white text-sm lg:text-base"
                   placeholder="(00) 00000-0000"
                 />
               </div>
@@ -64,7 +64,7 @@ const Contact: React.FC = () => {
                 <textarea 
                   id="message" 
                   rows={5} 
-                  className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 text-white"
+                  className="w-full px-3 py-2 lg:px-4 lg:py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 text-white text-sm lg:text-base resize-none"
                   placeholder="Conte-nos sobre seu projeto..."
                   required
                 ></textarea>
@@ -72,7 +72,7 @@ const Contact: React.FC = () => {
               
               <button 
                 type="submit"
-                className="w-full bg-red-600 hover:bg-red-700 text-white py-3 px-6 rounded-lg font-medium transition-colors flex items-center justify-center"
+                className="w-full bg-red-600 hover:bg-red-700 text-white py-2 lg:py-3 px-6 rounded-lg font-medium transition-colors flex items-center justify-center text-sm lg:text-base"
               >
                 Enviar Mensagem
                 <Send size={18} className="ml-2" />
@@ -82,16 +82,16 @@ const Contact: React.FC = () => {
           
           {/* Contact Info */}
           <div>
-            <h3 className="text-2xl font-bold mb-6">Informações de Contato</h3>
+            <h3 className="text-xl lg:text-2xl font-bold mb-6">Informações de Contato</h3>
             
-            <div className="space-y-8">
+            <div className="space-y-6 lg:space-y-8">
               <div className="flex items-start">
-                <div className="bg-red-600 p-3 rounded-lg mr-4">
+                <div className="bg-red-600 p-2 lg:p-3 rounded-lg mr-3 lg:mr-4 flex-shrink-0">
                   <MapPin size={24} className="text-white" />
                 </div>
                 <div>
-                  <h4 className="text-lg font-semibold mb-1">Nosso Endereço</h4>
-                  <p className="text-gray-300">
+                  <h4 className="text-base lg:text-lg font-semibold mb-1">Nosso Endereço</h4>
+                  <p className="text-gray-300 text-sm lg:text-base">
                     Av. Paulista, 1000 - Bela Vista<br />
                     São Paulo - SP, 01310-100
                   </p>
@@ -99,17 +99,17 @@ const Contact: React.FC = () => {
               </div>
               
               <div className="flex items-start">
-                <div className="bg-red-600 p-3 rounded-lg mr-4">
+                <div className="bg-red-600 p-2 lg:p-3 rounded-lg mr-3 lg:mr-4 flex-shrink-0">
                   <Phone size={24} className="text-white" />
                 </div>
                 <div>
-                  <h4 className="text-lg font-semibold mb-1">Telefones</h4>
-                  <p className="text-gray-300 mb-1">
+                  <h4 className="text-base lg:text-lg font-semibold mb-1">Telefones</h4>
+                  <p className="text-gray-300 mb-1 text-sm lg:text-base">
                     <a href="tel:8998101-7105" className="hover:text-red-400 transition-colors">
                       89 98101-7105
                     </a>
                   </p>
-                  <p className="text-gray-300">
+                  <p className="text-gray-300 text-sm lg:text-base">
                     <a target="_blank" href="https://wa.me/5511991298838" className="hover:text-red-400 transition-colors">
                       11 99129-8838 (WhatsApp)
                     </a>
@@ -118,12 +118,12 @@ const Contact: React.FC = () => {
               </div>
               
               <div className="flex items-start">
-                <div className="bg-red-600 p-3 rounded-lg mr-4">
+                <div className="bg-red-600 p-2 lg:p-3 rounded-lg mr-3 lg:mr-4 flex-shrink-0">
                   <Mail size={24} className="text-white" />
                 </div>
                 <div>
-                  <h4 className="text-lg font-semibold mb-1">E-mail</h4>
-                  <p className="text-gray-300">
+                  <h4 className="text-base lg:text-lg font-semibold mb-1">E-mail</h4>
+                  <p className="text-gray-300 text-sm lg:text-base break-all">
                     <a href="mailto:francisco.contatoportfolio@gmail.com" className="hover:text-red-400 transition-colors">
                       francisco.contatoportfolio@gmail.com
                     </a>
@@ -132,12 +132,12 @@ const Contact: React.FC = () => {
               </div>
               
               <div className="flex items-start">
-                <div className="bg-red-600 p-3 rounded-lg mr-4">
+                <div className="bg-red-600 p-2 lg:p-3 rounded-lg mr-3 lg:mr-4 flex-shrink-0">
                   <Clock size={24} className="text-white" />
                 </div>
                 <div>
-                  <h4 className="text-lg font-semibold mb-1">Horário de Atendimento</h4>
-                  <p className="text-gray-300">
+                  <h4 className="text-base lg:text-lg font-semibold mb-1">Horário de Atendimento</h4>
+                  <p className="text-gray-300 text-sm lg:text-base">
                     Segunda feira - 8:00 às 18:00<br />
                     Terça a sexta feira - 7:00 às 18:00
                   </p>
@@ -146,7 +146,7 @@ const Contact: React.FC = () => {
             </div>
             
             <div className="mt-10">
-              <h4 className="text-lg font-semibold mb-4">Nos siga nas redes sociais</h4>
+              <h4 className="text-base lg:text-lg font-semibold mb-4">Nos siga nas redes sociais</h4>
               <div className="flex space-x-4">
                 <a 
                  target="_blank" href="https://www.facebook.com/fco.vieira13" 

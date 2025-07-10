@@ -57,10 +57,10 @@ const Portfolio: React.FC = () => {
     <section id="clientes" className="py-20 bg-gray-100">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 px-4">
             Nosso Portfólio
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto px-4">
             Conheça alguns dos nossos trabalhos realizados para clientes e parceiros em todo o Brasil.
             Clique nas imagens para saber mais via WhatsApp.
           </p>
@@ -68,12 +68,12 @@ const Portfolio: React.FC = () => {
         </div>
         
         {/* Filter Buttons */}
-        <div className="flex flex-wrap justify-center mb-12 gap-2">
+        <div className="flex flex-wrap justify-center mb-8 lg:mb-12 gap-2 px-4">
           {['all', 'feiras', 'adesivos', 'visual'].map((category) => (
             <button
               key={category}
               onClick={() => setFilter(category)}
-              className={`px-6 py-2 rounded-full transition-all ${
+              className={`px-4 lg:px-6 py-2 rounded-full transition-all text-sm lg:text-base ${
                 filter === category 
                   ? 'bg-red-600 text-white' 
                   : 'bg-white text-gray-700 hover:bg-gray-200'
@@ -87,16 +87,16 @@ const Portfolio: React.FC = () => {
         </div>
         
         {/* Portfolio Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {filteredItems.map((item) => (
             <a
               key={item.id}
               href={`https://wa.me/${item.whatsappNumber}?text=Olá, gostaria de saber mais sobre o projeto: ${item.title}`}
-              className="group relative overflow-hidden rounded-lg shadow-lg bg-white transform transition-all duration-300 hover:-translate-y-2"
+              className="group relative overflow-hidden rounded-lg shadow-lg bg-white transform transition-all duration-300 hover:-translate-y-1 lg:hover:-translate-y-2"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="relative h-64 overflow-hidden">
+              <div className="relative h-48 sm:h-56 lg:h-64 overflow-hidden">
                 <img 
                   src={item.imageUrl} 
                   alt={item.title} 
@@ -104,14 +104,14 @@ const Portfolio: React.FC = () => {
                 />
                 <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-60 transition-opacity duration-300"></div>
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <span className="bg-red-600 text-white px-4 py-2 rounded-full text-sm">
+                  <span className="bg-red-600 text-white px-3 lg:px-4 py-2 rounded-full text-xs lg:text-sm">
                     Saiba mais
                   </span>
                 </div>
               </div>
-              <div className="p-4">
-                <span className="text-sm text-red-600 font-medium">{item.category}</span>
-                <h3 className="text-lg font-bold mt-1">{item.title}</h3>
+              <div className="p-3 lg:p-4">
+                <span className="text-xs lg:text-sm text-red-600 font-medium">{item.category}</span>
+                <h3 className="text-base lg:text-lg font-bold mt-1">{item.title}</h3>
               </div>
             </a>
           ))}

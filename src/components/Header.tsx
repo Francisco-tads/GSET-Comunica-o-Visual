@@ -39,9 +39,11 @@ const Header: React.FC = () => {
       <div className={`transition-all duration-300 ${scrolled ? 'py-2' : 'py-4'}`}>
         <div className="container mx-auto px-4 flex justify-between items-center">
           <a href="#" className="flex items-center">
-            <h1 className="text-xl md:text-2xl font-bold text-white">
-              <span className="text-red-600">GSET</span> Comunicação Visual
-            </h1>
+            <img 
+              src="https://raw.githubusercontent.com/Francisco-tads/GSET-Comunica-o-Visual/refs/heads/master/src/img/logo-gset2.png" 
+              alt="GSET Comunicação Visual" 
+              className="h-8 md:h-10 lg:h-12 w-auto"
+            />
           </a>
 
           {/* Desktop Menu */}

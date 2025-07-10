@@ -19,14 +19,14 @@ const Hero: React.FC = () => {
       
       {/* Content */}
       <div className="container mx-auto px-4 relative z-20">
-        <div className="max-w-2xl mx-auto md:mx-0">
+        <div className="max-w-4xl mx-auto text-center md:text-left md:mx-0">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 md:mb-6 leading-tight">
             Soluções em <span className="text-red-600">Comunicação Visual</span> para o seu negócio
           </h1>
-          <p className="text-base sm:text-lg md:text-xl text-gray-200 mb-6 md:mb-8">
+          <p className="text-base sm:text-lg md:text-xl text-gray-200 mb-6 md:mb-8 max-w-3xl mx-auto md:mx-0">
             Especialistas em sinalização para feiras, eventos e stands, oferecendo soluções completas em comunicação visual há mais de 10 anos.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <a 
               href="#produtos" 
               className="w-full sm:w-auto text-center bg-red-600 hover:bg-red-700 text-white py-3 px-6 md:px-8 rounded-md font-medium transition-all duration-300 inline-flex items-center justify-center"

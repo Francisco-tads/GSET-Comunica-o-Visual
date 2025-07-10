@@ -14,9 +14,13 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-1">
-            <h3 className="text-xl font-bold mb-4">
-              GSET <span className="text-red-600">Comunicação Visual</span>
-            </h3>
+            <div className="mb-4">
+              <img 
+                src="https://raw.githubusercontent.com/Francisco-tads/GSET-Comunica-o-Visual/refs/heads/master/src/img/logo-gset2.png" 
+                alt="GSET Comunicação Visual" 
+                className="h-8 w-auto mb-2"
+              />
+            </div>
             <p className="text-gray-400 mb-6">
               Especialistas em comunicação visual para feiras, eventos e personalização de ambientes.
               Qualidade e experiência há mais de 10 anos.
