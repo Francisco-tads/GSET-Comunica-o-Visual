@@ -71,8 +71,10 @@ const Services: React.FC = () => {
                 <a 
                   href={`https://wa.me/5511991298838?text=Olá, gostaria de saber mais sobre ${service.title}`} 
                   className="inline-block w-full md:w-auto text-center bg-red-600 hover:bg-red-700 text-white py-2 px-6 rounded-md font-medium transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  Solicitar Orçamento
+                  Ver Mais
                 </a>
               </div>
             </div>
