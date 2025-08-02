@@ -42,7 +42,7 @@ const Header: React.FC = () => {
             <img 
               src="https://raw.githubusercontent.com/Francisco-tads/GSET-Comunica-o-Visual/refs/heads/master/src/img/logo-gset2.png" 
               alt="GSET Comunicação Visual" 
-             className="h-8 md:h-10 lg:h-12 w-auto"
+             className="h-10 md:h-12 lg:h-14 w-auto"
             />
           </a>
 
